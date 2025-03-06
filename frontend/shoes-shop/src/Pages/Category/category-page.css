@@ -1,0 +1,19 @@
+
+/* Контейнер для вмісту (фільтри + карточки) */
+  .content-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Контейнер для фільтрів */
+  .filter {
+    width: 250px;
+    margin-top: 50px;
+  }
+  
+  /* Контейнер для карточок */
+  .cards-shoes {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 3fr)); /* Автоматичні колонки */
+  }

@@ -1,0 +1,69 @@
+.shoe-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoes-carousel {
+    display: flex;
+    gap: 10px; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 300px; 
+}
+
+.shoes-carousel img {
+    width: 300px;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    z-index: 2;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+
+.arrow.right {
+    right: 0;
+}
+
+.btn-choose{
+    margin-bottom: 15px;
+}
+
+
+.btn-choose button{
+    margin-right: 15px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #000;
+    font-size: 12px;
+
+    transition: 0.2s ease; 
+}
+
+.btn-choose button:hover{
+    background-color: #f1f1f1;
+}
+
+.arrival-btn.active, .sellers-btn.active {
+    background-color: #000000;
+    color: white;
+}
+
+.arrival-btn:hover, .sellers-btn:hover {
+    background-color: #ddd;
+}

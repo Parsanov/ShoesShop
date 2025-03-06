@@ -1,0 +1,37 @@
+.footer-conteiner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: auto;
+    background-color: hsl(0, 0%, 98%);
+
+    
+}
+
+.content-footer {
+    width: 1000px;
+    display: flex;
+    padding: 60px 50px;
+    justify-content: space-between;
+}
+
+.content-footer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content-footer li {
+    margin-bottom: 8px;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-media {
+    width: 45px;
+}

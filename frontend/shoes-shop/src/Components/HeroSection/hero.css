@@ -1,0 +1,62 @@
+.hero{
+    background-image: url("../../assets/background/background.png");
+    background-size: cover; /* Розтягує зображення на весь блок */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Вимикає повторення */
+    height: 600px; /* Висота блоку */   
+    width: 100%; /* Ширина блоку */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Колір тексту */
+    position: relative;
+}
+
+.hero-content{
+    display: flex;
+    position: relative;
+    bottom: 150px;
+}
+
+.hero-content a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-weight: 600;
+    margin-right: 15px;
+    width: 250px;
+    height: 50px;
+
+    transition: 0.2s ease;
+}
+
+
+
+.btn:hover {
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hero-content a:hover{
+    color: #fff;
+}
+
+
+.btn:hover img {
+    fill: #fff;
+}
+
+.arrow-icon {
+    margin-left: 10px; 
+}

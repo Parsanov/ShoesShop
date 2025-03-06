@@ -1,0 +1,30 @@
+.color-filter {
+  margin-top: 1.5rem;
+  width: 230px;
+}
+
+.color-filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.color-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+
+.color-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.color-item.selected {
+  border-color: #3b82f6;
+}

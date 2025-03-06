@@ -1,0 +1,102 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ShoesAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Shoes/AddShoes": {
+      "put": {
+        "tags": [
+          "Shoes"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "NameShoes": {
+                    "type": "string"
+                  },
+                  "Price": {
+                    "type": "string"
+                  },
+                  "SizeShoes": {
+                    "type": "string"
+                  },
+                  "Gender": {
+                    "type": "string"
+                  },
+                  "Images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "NameShoes": {
+                  "style": "form"
+                },
+                "Price": {
+                  "style": "form"
+                },
+                "SizeShoes": {
+                  "style": "form"
+                },
+                "Gender": {
+                  "style": "form"
+                },
+                "Images": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Shoes/GetAllShoes": {
+      "get": {
+        "tags": [
+          "Shoes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Shoes/GetOneShoes": {
+      "get": {
+        "tags": [
+          "Shoes"
+        ],
+        "parameters": [
+          {
+            "name": "shoesId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

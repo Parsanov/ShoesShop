@@ -1,0 +1,117 @@
+.price-filter {
+    width: 230px;
+  }
+  
+
+.price-filter-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Підзаголовок */
+  .price-filter-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Контейнер для слайдера */
+  .slider-container {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  /* Основа слайдера */
+  .slider {
+    position: relative;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+  }
+  
+  /* Заповнений простір між ручками */
+  .slider-track {
+    position: absolute;
+    height: 6px;
+    background: #000;
+    border-radius: 3px;
+    top: 0;
+    z-index: 2;
+  }
+  
+  /* Стилі для ручок слайдера */
+  .slider-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 6px;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    z-index: 3;
+  }
+  
+  .slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  
+  .slider-thumb::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  
+  /* Позиціонування ручок */
+  .slider-thumb--min {
+    z-index: 4;
+  }
+  
+  .slider-thumb--max {
+    z-index: 5;
+  }
+  
+  /* Контейнер для інпутів */
+.input-container-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Інпути для ціни */
+  .price-input {
+    width: 100px;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  .price-input:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+
+.horizontal-line{
+    content: "";
+    height: 1px;
+    background-color: #000;
+    opacity: 30%;
+
+    margin-bottom: 15px;
+}
