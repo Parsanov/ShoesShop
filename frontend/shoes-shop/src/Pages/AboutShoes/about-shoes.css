@@ -1,0 +1,65 @@
+.about-shoes {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+
+  margin-top: 50px;
+}
+
+.carousel {
+  width: 400px;
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(255, 255, 255) !important;
+  opacity: 0.5;
+}
+
+.info {
+  margin-left: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16.5px;
+}
+
+.title h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.article h3 {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.price h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.button-buy button{
+    width: 200px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease; 
+}
+
+.button-buy button:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}

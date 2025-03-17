@@ -33,7 +33,7 @@ namespace Application
                 if (sho == null)
                     throw new ArgumentNullException(nameof(sho), "Shoe not found");
 
-                var matchingImage = images.FirstOrDefault(img => img.ShoesId == sho.Id);
+                var matchingImage = await _dataImage.GetImageUrlAsync(id);
 
                 return new ShoeRVM
                 {
@@ -41,7 +41,7 @@ namespace Application
                     NameShoes = sho.NameShoes,
                     Price = sho.Price,
                     SizeShoes = sho.SizeShoes,
-                    OneImage = matchingImage?.ImageUrl 
+                    ImagesUrl = matchingImage.ImageUrl
                 };
             }
             catch (Exception ex)

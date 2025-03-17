@@ -1,4 +1,5 @@
 ﻿using Core.Model;
+using Core.ViewModel;
 
 namespace Core.Interfaces
 {
@@ -6,5 +7,6 @@ namespace Core.Interfaces
     {
         Task UploadToBase(Image image);
         Task<IEnumerable<Image>> GetImageUrl();
+        Task<ImageRurl> GetImageUrlAsync(string idShoe);
     }
 }

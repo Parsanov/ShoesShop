@@ -1,0 +1,56 @@
+/* ShoeSizeTable styles */
+.shoe-size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  
+  .shoe-size-cell {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    cursor: pointer; /* Add a pointer to indicate it's clickable */
+  }
+  
+  .shoe-size-cell:hover {
+    background-color: #f0f0f0; /* Optional hover effect */
+  }
+  
+  .selected-cell {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .shoe-size-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .shoe-size-link:hover {
+    text-decoration: underline;
+  }
+  
+  .shoe-size-title {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .shoe-size-container {
+    margin: 15px 0;
+  }
+  
+  .selected-size-box {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+  }
+  
