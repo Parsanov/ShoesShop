@@ -1,5 +1,5 @@
-import Hero from '../../Components/HeroSection/Hero.jsx';
-import Carousel from '../../Components/ProductСarousel/Сarousel.jsx';
+import Hero from '../../Components/MainElement/HeroSection/Hero.jsx';
+import Carousel from '../../Components/MainElement/ProductСarousel/Сarousel.jsx';
 
 const HomePage = () => {
     return ( 

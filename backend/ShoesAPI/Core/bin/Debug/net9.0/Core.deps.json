@@ -9,7 +9,7 @@
       "Core/1.0.0": {
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
@@ -26,17 +26,17 @@
           "Core.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.402.19": {
+      "AWSSDK.Core/3.7.402.20": {
         "runtime": {
           "lib/net8.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.402.19"
+            "fileVersion": "3.7.402.20"
           }
         }
       },
       "AWSSDK.Extensions.NETCore.Setup/3.7.400": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.402.19",
+          "AWSSDK.Core": "3.7.402.20",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.3"
@@ -48,14 +48,14 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.415.18": {
+      "AWSSDK.S3/3.7.415.19": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.402.19"
+          "AWSSDK.Core": "3.7.402.20"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.415.18"
+            "fileVersion": "3.7.415.19"
           }
         }
       },
@@ -1066,12 +1066,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.7.402.19": {
+    "AWSSDK.Core/3.7.402.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QNxPperAlN9LyZQ3XwQtGI3I3XeULucGzqI3PngR6jxNvwJTD++YyklL/6o2Q3CRfVmnj7noXh+nhiXuQbA/Ig==",
-      "path": "awssdk.core/3.7.402.19",
-      "hashPath": "awssdk.core.3.7.402.19.nupkg.sha512"
+      "sha512": "sha512-5/POFNoag33ngGpXBYXDdHbQbuIWgvXUq1J5R1ifGDw1/qXxpc690DEkS/EoPqcFP3PnS7M0VBi5qjTaPbGV0Q==",
+      "path": "awssdk.core/3.7.402.20",
+      "hashPath": "awssdk.core.3.7.402.20.nupkg.sha512"
     },
     "AWSSDK.Extensions.NETCore.Setup/3.7.400": {
       "type": "package",
@@ -1080,12 +1080,12 @@
       "path": "awssdk.extensions.netcore.setup/3.7.400",
       "hashPath": "awssdk.extensions.netcore.setup.3.7.400.nupkg.sha512"
     },
-    "AWSSDK.S3/3.7.415.18": {
+    "AWSSDK.S3/3.7.415.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lTq+XOORliPaWETAOrsbFFaNu4Zjtd0YFrhBHQC+rIyK/yvTw0ma+v3Wl59thkNSR7wcTxcuMuqFfMaxPlQcag==",
-      "path": "awssdk.s3/3.7.415.18",
-      "hashPath": "awssdk.s3.3.7.415.18.nupkg.sha512"
+      "sha512": "sha512-zp5hMXtQxtRL7sr+HFVu1YXe39l20FqY1txE7MJQMXzC4Otqo3O1HHMrSFVrRMqSy6n6E2YSS0V5zAFDURhl5w==",
+      "path": "awssdk.s3/3.7.415.19",
+      "hashPath": "awssdk.s3.3.7.415.19.nupkg.sha512"
     },
     "Google.Api.Gax/4.9.0": {
       "type": "package",

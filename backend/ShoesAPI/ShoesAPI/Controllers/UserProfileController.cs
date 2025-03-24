@@ -15,12 +15,14 @@ namespace ShoesAPI.Controllers
             var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
             var userName = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
             var userRoles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+            var email = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
 
             return Ok(new
             {
                 UserId = userId,
                 UserName = userName,
-                Roles = userRoles
+                Roles = userRoles,
+                Email = email
             });
         }
     }

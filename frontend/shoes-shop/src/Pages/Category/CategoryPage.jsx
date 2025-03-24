@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { fetchAllShoes } from "../../Api/fetchAllShoes.js"
 import { v4 as uuidv4 } from 'uuid';
-import ShoesCard from "../../Components/ShoesCard/ShoesCard";
+import ShoesCard from "../../Components/ShoeOption/ShoesCard/ShoesCard";
 import "./category-page.css";
-import PriceFilter from "../../Components/PriceFilter/PriceFilter";
-import ColorFilter from "../../Components/ColorFilter/ColorFilter.jsx";
+import PriceFilter from "../../Components/MainElement/PriceFilter/PriceFilter";
+import ColorFilter from "../../Components/MainElement/ColorFilter/ColorFilter.jsx";
 
 const CategoryPage = ({ gender }) => {
 

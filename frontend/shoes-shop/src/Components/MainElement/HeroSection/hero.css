@@ -1,5 +1,5 @@
 .hero{
-    background-image: url("../../assets/background/background.png");
+    background-image: url("../../../assets/background/background.png");
     background-size: cover; /* Розтягує зображення на весь блок */
     background-position: center; /* Центрує зображення */
     background-repeat: no-repeat; /* Вимикає повторення */

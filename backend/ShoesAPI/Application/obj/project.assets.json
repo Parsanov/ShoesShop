@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "AWSSDK.Core/3.7.402.19": {
+      "AWSSDK.Core/3.7.402.20": {
         "type": "package",
         "compile": {
           "lib/net8.0/AWSSDK.Core.dll": {
@@ -34,10 +34,10 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.415.18": {
+      "AWSSDK.S3/3.7.415.19": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.402.19, 4.0.0)"
+          "AWSSDK.Core": "[3.7.402.20, 4.0.0)"
         },
         "compile": {
           "lib/net8.0/AWSSDK.S3.dll": {
@@ -1930,7 +1930,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
@@ -1951,15 +1951,15 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.7.402.19": {
-      "sha512": "QNxPperAlN9LyZQ3XwQtGI3I3XeULucGzqI3PngR6jxNvwJTD++YyklL/6o2Q3CRfVmnj7noXh+nhiXuQbA/Ig==",
+    "AWSSDK.Core/3.7.402.20": {
+      "sha512": "5/POFNoag33ngGpXBYXDdHbQbuIWgvXUq1J5R1ifGDw1/qXxpc690DEkS/EoPqcFP3PnS7M0VBi5qjTaPbGV0Q==",
       "type": "package",
-      "path": "awssdk.core/3.7.402.19",
+      "path": "awssdk.core/3.7.402.20",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.402.19.nupkg.sha512",
+        "awssdk.core.3.7.402.20.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
@@ -1998,17 +1998,17 @@
         "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
       ]
     },
-    "AWSSDK.S3/3.7.415.18": {
-      "sha512": "lTq+XOORliPaWETAOrsbFFaNu4Zjtd0YFrhBHQC+rIyK/yvTw0ma+v3Wl59thkNSR7wcTxcuMuqFfMaxPlQcag==",
+    "AWSSDK.S3/3.7.415.19": {
+      "sha512": "zp5hMXtQxtRL7sr+HFVu1YXe39l20FqY1txE7MJQMXzC4Otqo3O1HHMrSFVrRMqSy6n6E2YSS0V5zAFDURhl5w==",
       "type": "package",
-      "path": "awssdk.s3/3.7.415.18",
+      "path": "awssdk.s3/3.7.415.19",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
         "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.s3.3.7.415.18.nupkg.sha512",
+        "awssdk.s3.3.7.415.19.nupkg.sha512",
         "awssdk.s3.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.S3.dll",
@@ -5085,7 +5085,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "AWSSDK.Extensions.NETCore.Setup >= 3.7.400",
-      "AWSSDK.S3 >= 3.7.415.18",
+      "AWSSDK.S3 >= 3.7.415.19",
       "Core >= 1.0.0",
       "Google.Cloud.Storage.V1 >= 4.11.0",
       "Microsoft.AspNet.Mvc >= 5.3.0",
@@ -5160,7 +5160,7 @@
           },
           "AWSSDK.S3": {
             "target": "Package",
-            "version": "[3.7.415.18, )"
+            "version": "[3.7.415.19, )"
           },
           "Google.Cloud.Storage.V1": {
             "target": "Package",

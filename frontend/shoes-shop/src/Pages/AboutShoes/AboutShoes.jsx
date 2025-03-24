@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import ShoeSizeTable from "../../Components/ShoeSizeTable/ShoeSizeTable";
+import ShoeSizeTable from "../../Components/ShoeOption/ShoeSizeTable/ShoeSizeTable";
 import NoImage from "../../assets/no-image.png";
 
 const AboutShoes = () => {

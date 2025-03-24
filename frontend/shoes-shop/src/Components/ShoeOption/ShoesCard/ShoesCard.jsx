@@ -1,6 +1,6 @@
 import "./shoes-card.css";
 import { Link } from "react-router-dom";
-import NoImage from "../../assets/no-image.png";
+import NoImage from "../../../assets/no-image.png";
 
 const ShoesCard = ({ id, name, price, img }) => {
     return ( 

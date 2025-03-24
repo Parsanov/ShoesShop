@@ -33,6 +33,7 @@ namespace Application
             try
             {
                 var user = await _userManager.FindByEmailAsync(login.Email);
+
                 if (user == null)
                 {
                     _logger.LogWarning("User with email {Email} not found.", login.Email);
@@ -81,7 +82,7 @@ namespace Application
         {
             try
             {
-                var existingUser = await _userManager.FindByEmailAsync(register.Email);
+                var existingUser = await _userManager.FindByEmailAsync(register.Email.ToLower());
 
                 if (existingUser != null)
                 {
@@ -97,7 +98,7 @@ namespace Application
 
                 var user = new IdentityUser
                 {
-                    UserName = register.Email,
+                    UserName = register.Email.Split('@')[0],
                     Email = register.Email
                 };
 

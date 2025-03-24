@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "AWSSDK.Core/3.7.402.19": {
+      "AWSSDK.Core/3.7.402.20": {
         "type": "package",
         "compile": {
           "lib/net8.0/AWSSDK.Core.dll": {
@@ -34,10 +34,10 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.415.18": {
+      "AWSSDK.S3/3.7.415.19": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.402.19, 4.0.0)"
+          "AWSSDK.Core": "[3.7.402.20, 4.0.0)"
         },
         "compile": {
           "lib/net8.0/AWSSDK.S3.dll": {
@@ -1547,13 +1547,13 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore/7.3.1": {
+      "Swashbuckle.AspNetCore/7.3.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "7.3.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "7.3.1",
-          "Swashbuckle.AspNetCore.SwaggerUI": "7.3.1"
+          "Swashbuckle.AspNetCore.Swagger": "7.3.2",
+          "Swashbuckle.AspNetCore.SwaggerGen": "7.3.2",
+          "Swashbuckle.AspNetCore.SwaggerUI": "7.3.2"
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
@@ -1562,7 +1562,7 @@
           "buildMultiTargeting/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/7.3.1": {
+      "Swashbuckle.AspNetCore.Swagger/7.3.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.22"
@@ -1581,10 +1581,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/7.3.1": {
+      "Swashbuckle.AspNetCore.SwaggerGen/7.3.2": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "7.3.1"
+          "Swashbuckle.AspNetCore.Swagger": "7.3.2"
         },
         "compile": {
           "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -1597,7 +1597,7 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/7.3.1": {
+      "Swashbuckle.AspNetCore.SwaggerUI/7.3.2": {
         "type": "package",
         "compile": {
           "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
@@ -2020,7 +2020,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Core": "1.0.0",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNet.Mvc": "5.3.0",
@@ -2044,7 +2044,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
@@ -2067,7 +2067,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Core": "1.0.0",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
@@ -2088,15 +2088,15 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.7.402.19": {
-      "sha512": "QNxPperAlN9LyZQ3XwQtGI3I3XeULucGzqI3PngR6jxNvwJTD++YyklL/6o2Q3CRfVmnj7noXh+nhiXuQbA/Ig==",
+    "AWSSDK.Core/3.7.402.20": {
+      "sha512": "5/POFNoag33ngGpXBYXDdHbQbuIWgvXUq1J5R1ifGDw1/qXxpc690DEkS/EoPqcFP3PnS7M0VBi5qjTaPbGV0Q==",
       "type": "package",
-      "path": "awssdk.core/3.7.402.19",
+      "path": "awssdk.core/3.7.402.20",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.402.19.nupkg.sha512",
+        "awssdk.core.3.7.402.20.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
@@ -2135,17 +2135,17 @@
         "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
       ]
     },
-    "AWSSDK.S3/3.7.415.18": {
-      "sha512": "lTq+XOORliPaWETAOrsbFFaNu4Zjtd0YFrhBHQC+rIyK/yvTw0ma+v3Wl59thkNSR7wcTxcuMuqFfMaxPlQcag==",
+    "AWSSDK.S3/3.7.415.19": {
+      "sha512": "zp5hMXtQxtRL7sr+HFVu1YXe39l20FqY1txE7MJQMXzC4Otqo3O1HHMrSFVrRMqSy6n6E2YSS0V5zAFDURhl5w==",
       "type": "package",
-      "path": "awssdk.s3/3.7.415.18",
+      "path": "awssdk.s3/3.7.415.19",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
         "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.s3.3.7.415.18.nupkg.sha512",
+        "awssdk.s3.3.7.415.19.nupkg.sha512",
         "awssdk.s3.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.S3.dll",
@@ -4772,24 +4772,24 @@
         "postgresql.png"
       ]
     },
-    "Swashbuckle.AspNetCore/7.3.1": {
-      "sha512": "6u8w+UXp/sF89xQjfydWw6znQrUpbpFOmEIs8ODE+S0bV+mCQ9dNP4mk+HRsGHylpDaP5KSYSCEfFSgluLXHsA==",
+    "Swashbuckle.AspNetCore/7.3.2": {
+      "sha512": "WEkW7Cl8bexT75eURuqrqM/TQx+ftWKOWlCHzmw3Fl3oAmxiBO/lDVOuuqZsaBCHQIBcZxA6BbyiG5dv2mD2tw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/7.3.1",
+      "path": "swashbuckle.aspnetcore/7.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
         "buildMultiTargeting/Swashbuckle.AspNetCore.props",
         "docs/package-readme.md",
-        "swashbuckle.aspnetcore.7.3.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.7.3.2.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/7.3.1": {
-      "sha512": "jQuJ8kVbq+YE8WsJE3RwWHlF1kasp0QkA9Gl6NeNLICrhcgN8IQIthMufYW6t/4hpcN5cBIdES5jCEV81WjHbA==",
+    "Swashbuckle.AspNetCore.Swagger/7.3.2": {
+      "sha512": "39Z2N3cLHDcDinu2IW5IaQO9wGPKTbc+vKbjIT/6gN3jFYypWY5U3O8i7Y9rmYDgxkm6niICnkcFZ3hEvikIHA==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/7.3.1",
+      "path": "swashbuckle.aspnetcore.swagger/7.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4806,14 +4806,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swagger.7.3.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.7.3.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/7.3.1": {
-      "sha512": "xs7Pznb3SSjZy7HpThE0ILqECfQFsGDHOrRoIYD/j67ktdRR1juDG4AMyidXXCOipgzHanZoF+nFrc+Nmjqjyw==",
+    "Swashbuckle.AspNetCore.SwaggerGen/7.3.2": {
+      "sha512": "x5famjpcgazpT/8eEIlpSYSTZDq6ojMARhuJgj6O67Uk+Yb1DdDM5yikdL7GK1pMk5rYBETUCRWYP6rp+vHnlA==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/7.3.1",
+      "path": "swashbuckle.aspnetcore.swaggergen/7.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4830,14 +4830,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggergen.7.3.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.7.3.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/7.3.1": {
-      "sha512": "hs6C+lmNEzipOA1WPQpIaGvvoXjUbnoevbv6l7o9ZQE8SNF8ggjOmK6NB6cYdMcEvk0uBeKl4Qq/BnRt5MFVqg==",
+    "Swashbuckle.AspNetCore.SwaggerUI/7.3.2": {
+      "sha512": "SNQuFjYin9KhkoCSVOD5/Y4VEyAjKBDeZkIqqY6x+oI21HMKzzVkeJA9V7tWFXf5df4m/+pTIlbKO7g5W9UroQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/7.3.1",
+      "path": "swashbuckle.aspnetcore.swaggerui/7.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4854,7 +4854,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.7.3.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.7.3.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
@@ -5564,7 +5564,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "AWSSDK.Extensions.NETCore.Setup >= 3.7.400",
-      "AWSSDK.S3 >= 3.7.415.18",
+      "AWSSDK.S3 >= 3.7.415.19",
       "Application >= 1.0.0",
       "Core >= 1.0.0",
       "Google.Cloud.Storage.V1 >= 4.11.0",
@@ -5577,7 +5577,7 @@
       "Microsoft.IdentityModel.Tokens >= 8.6.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Persistence >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 7.3.1",
+      "Swashbuckle.AspNetCore >= 7.3.2",
       "System.IdentityModel.Tokens.Jwt >= 8.6.1"
     ]
   },
@@ -5647,7 +5647,7 @@
           },
           "AWSSDK.S3": {
             "target": "Package",
-            "version": "[3.7.415.18, )"
+            "version": "[3.7.415.19, )"
           },
           "Google.Cloud.Storage.V1": {
             "target": "Package",
@@ -5691,7 +5691,7 @@
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[7.3.1, )"
+            "version": "[7.3.2, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",

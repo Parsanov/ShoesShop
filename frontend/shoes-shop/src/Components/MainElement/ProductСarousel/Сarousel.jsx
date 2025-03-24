@@ -1,9 +1,9 @@
 import "./carousel.css";
-import shoe1 from "../../assets/ExampleShoes/1.jpg";
-import shoe2 from "../../assets/ExampleShoes/2.jpg";
-import shoe3 from "../../assets/ExampleShoes/3.jpg";
-import shoe4 from "../../assets/ExampleShoes/4.jpg";
-import shoe5 from "../../assets/ExampleShoes/5.jpg";
+import shoe1 from "../../../assets/ExampleShoes/1.jpg";
+import shoe2 from "../../../assets/ExampleShoes/2.jpg";
+import shoe3 from "../../../assets/ExampleShoes/3.jpg";
+import shoe4 from "../../../assets/ExampleShoes/4.jpg";
+import shoe5 from "../../../assets/ExampleShoes/5.jpg";
 import { useState, useRef } from "react";
 
 const Carousel = () => {

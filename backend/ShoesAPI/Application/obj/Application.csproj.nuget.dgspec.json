@@ -60,7 +60,7 @@
             },
             "AWSSDK.S3": {
               "target": "Package",
-              "version": "[3.7.415.18, )"
+              "version": "[3.7.415.19, )"
             },
             "Google.Cloud.Storage.V1": {
               "target": "Package",
@@ -183,7 +183,7 @@
             },
             "AWSSDK.S3": {
               "target": "Package",
-              "version": "[3.7.415.18, )"
+              "version": "[3.7.415.19, )"
             },
             "Google.Cloud.Storage.V1": {
               "target": "Package",

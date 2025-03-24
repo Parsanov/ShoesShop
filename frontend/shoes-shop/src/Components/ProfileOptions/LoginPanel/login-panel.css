@@ -1,0 +1,89 @@
+.login-panel{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.login-form h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-form-inputs input{
+    width: 300px;
+    padding: 10px;
+    margin:10px 0;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.login-form-inputs{
+    margin: 20px 0;
+}
+
+.login-form-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;    
+    padding: 10px;       
+    line-height: normal; 
+    margin-top: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: ease 0.2s;
+}
+
+.login-form-button:hover
+{
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-form-forgot-password{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 40%;
+    text-decoration: none;
+}
+
+.login-form-register{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 40%;
+    text-decoration: none;
+}
+
+.login-form-register span{
+    margin-right: 5px;
+}
+
+.login-form-register a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}

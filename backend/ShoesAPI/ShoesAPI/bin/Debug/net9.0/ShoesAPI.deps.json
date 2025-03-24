@@ -9,7 +9,7 @@
       "ShoesAPI/1.0.0": {
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Application": "1.0.0",
           "Core": "1.0.0",
           "Google.Cloud.Storage.V1": "4.11.0",
@@ -22,24 +22,24 @@
           "Microsoft.IdentityModel.Tokens": "8.6.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Persistence": "1.0.0",
-          "Swashbuckle.AspNetCore": "7.3.1",
+          "Swashbuckle.AspNetCore": "7.3.2",
           "System.IdentityModel.Tokens.Jwt": "8.6.1"
         },
         "runtime": {
           "ShoesAPI.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.402.19": {
+      "AWSSDK.Core/3.7.402.20": {
         "runtime": {
           "lib/net8.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.402.19"
+            "fileVersion": "3.7.402.20"
           }
         }
       },
       "AWSSDK.Extensions.NETCore.Setup/3.7.400": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.402.19",
+          "AWSSDK.Core": "3.7.402.20",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.3"
@@ -51,14 +51,14 @@
           }
         }
       },
-      "AWSSDK.S3/3.7.415.18": {
+      "AWSSDK.S3/3.7.415.19": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.402.19"
+          "AWSSDK.Core": "3.7.402.20"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.415.18"
+            "fileVersion": "3.7.415.19"
           }
         }
       },
@@ -993,41 +993,41 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore/7.3.1": {
+      "Swashbuckle.AspNetCore/7.3.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "7.3.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "7.3.1",
-          "Swashbuckle.AspNetCore.SwaggerUI": "7.3.1"
+          "Swashbuckle.AspNetCore.Swagger": "7.3.2",
+          "Swashbuckle.AspNetCore.SwaggerGen": "7.3.2",
+          "Swashbuckle.AspNetCore.SwaggerUI": "7.3.2"
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/7.3.1": {
+      "Swashbuckle.AspNetCore.Swagger/7.3.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.6.22"
         },
         "runtime": {
           "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "assemblyVersion": "7.3.1.0",
-            "fileVersion": "7.3.1.1111"
+            "assemblyVersion": "7.3.2.0",
+            "fileVersion": "7.3.2.1170"
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/7.3.1": {
+      "Swashbuckle.AspNetCore.SwaggerGen/7.3.2": {
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "7.3.1"
+          "Swashbuckle.AspNetCore.Swagger": "7.3.2"
         },
         "runtime": {
           "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "assemblyVersion": "7.3.1.0",
-            "fileVersion": "7.3.1.1111"
+            "assemblyVersion": "7.3.2.0",
+            "fileVersion": "7.3.2.1170"
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/7.3.1": {
+      "Swashbuckle.AspNetCore.SwaggerUI/7.3.2": {
         "runtime": {
           "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "assemblyVersion": "7.3.1.0",
-            "fileVersion": "7.3.1.1111"
+            "assemblyVersion": "7.3.2.0",
+            "fileVersion": "7.3.2.1170"
           }
         }
       },
@@ -1163,7 +1163,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Core": "1.0.0",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNet.Mvc": "5.3.0",
@@ -1185,7 +1185,7 @@
       "Core/1.0.0": {
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
@@ -1206,7 +1206,7 @@
       "Persistence/1.0.0": {
         "dependencies": {
           "AWSSDK.Extensions.NETCore.Setup": "3.7.400",
-          "AWSSDK.S3": "3.7.415.18",
+          "AWSSDK.S3": "3.7.415.19",
           "Core": "1.0.0",
           "Google.Cloud.Storage.V1": "4.11.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.0",
@@ -1232,12 +1232,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.7.402.19": {
+    "AWSSDK.Core/3.7.402.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QNxPperAlN9LyZQ3XwQtGI3I3XeULucGzqI3PngR6jxNvwJTD++YyklL/6o2Q3CRfVmnj7noXh+nhiXuQbA/Ig==",
-      "path": "awssdk.core/3.7.402.19",
-      "hashPath": "awssdk.core.3.7.402.19.nupkg.sha512"
+      "sha512": "sha512-5/POFNoag33ngGpXBYXDdHbQbuIWgvXUq1J5R1ifGDw1/qXxpc690DEkS/EoPqcFP3PnS7M0VBi5qjTaPbGV0Q==",
+      "path": "awssdk.core/3.7.402.20",
+      "hashPath": "awssdk.core.3.7.402.20.nupkg.sha512"
     },
     "AWSSDK.Extensions.NETCore.Setup/3.7.400": {
       "type": "package",
@@ -1246,12 +1246,12 @@
       "path": "awssdk.extensions.netcore.setup/3.7.400",
       "hashPath": "awssdk.extensions.netcore.setup.3.7.400.nupkg.sha512"
     },
-    "AWSSDK.S3/3.7.415.18": {
+    "AWSSDK.S3/3.7.415.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lTq+XOORliPaWETAOrsbFFaNu4Zjtd0YFrhBHQC+rIyK/yvTw0ma+v3Wl59thkNSR7wcTxcuMuqFfMaxPlQcag==",
-      "path": "awssdk.s3/3.7.415.18",
-      "hashPath": "awssdk.s3.3.7.415.18.nupkg.sha512"
+      "sha512": "sha512-zp5hMXtQxtRL7sr+HFVu1YXe39l20FqY1txE7MJQMXzC4Otqo3O1HHMrSFVrRMqSy6n6E2YSS0V5zAFDURhl5w==",
+      "path": "awssdk.s3/3.7.415.19",
+      "hashPath": "awssdk.s3.3.7.415.19.nupkg.sha512"
     },
     "Google.Api.Gax/4.9.0": {
       "type": "package",
@@ -1785,33 +1785,33 @@
       "path": "npgsql.entityframeworkcore.postgresql/9.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore/7.3.1": {
+    "Swashbuckle.AspNetCore/7.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6u8w+UXp/sF89xQjfydWw6znQrUpbpFOmEIs8ODE+S0bV+mCQ9dNP4mk+HRsGHylpDaP5KSYSCEfFSgluLXHsA==",
-      "path": "swashbuckle.aspnetcore/7.3.1",
-      "hashPath": "swashbuckle.aspnetcore.7.3.1.nupkg.sha512"
+      "sha512": "sha512-WEkW7Cl8bexT75eURuqrqM/TQx+ftWKOWlCHzmw3Fl3oAmxiBO/lDVOuuqZsaBCHQIBcZxA6BbyiG5dv2mD2tw==",
+      "path": "swashbuckle.aspnetcore/7.3.2",
+      "hashPath": "swashbuckle.aspnetcore.7.3.2.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Swagger/7.3.1": {
+    "Swashbuckle.AspNetCore.Swagger/7.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jQuJ8kVbq+YE8WsJE3RwWHlF1kasp0QkA9Gl6NeNLICrhcgN8IQIthMufYW6t/4hpcN5cBIdES5jCEV81WjHbA==",
-      "path": "swashbuckle.aspnetcore.swagger/7.3.1",
-      "hashPath": "swashbuckle.aspnetcore.swagger.7.3.1.nupkg.sha512"
+      "sha512": "sha512-39Z2N3cLHDcDinu2IW5IaQO9wGPKTbc+vKbjIT/6gN3jFYypWY5U3O8i7Y9rmYDgxkm6niICnkcFZ3hEvikIHA==",
+      "path": "swashbuckle.aspnetcore.swagger/7.3.2",
+      "hashPath": "swashbuckle.aspnetcore.swagger.7.3.2.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/7.3.1": {
+    "Swashbuckle.AspNetCore.SwaggerGen/7.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xs7Pznb3SSjZy7HpThE0ILqECfQFsGDHOrRoIYD/j67ktdRR1juDG4AMyidXXCOipgzHanZoF+nFrc+Nmjqjyw==",
-      "path": "swashbuckle.aspnetcore.swaggergen/7.3.1",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.7.3.1.nupkg.sha512"
+      "sha512": "sha512-x5famjpcgazpT/8eEIlpSYSTZDq6ojMARhuJgj6O67Uk+Yb1DdDM5yikdL7GK1pMk5rYBETUCRWYP6rp+vHnlA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/7.3.2",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.7.3.2.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/7.3.1": {
+    "Swashbuckle.AspNetCore.SwaggerUI/7.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hs6C+lmNEzipOA1WPQpIaGvvoXjUbnoevbv6l7o9ZQE8SNF8ggjOmK6NB6cYdMcEvk0uBeKl4Qq/BnRt5MFVqg==",
-      "path": "swashbuckle.aspnetcore.swaggerui/7.3.1",
-      "hashPath": "swashbuckle.aspnetcore.swaggerui.7.3.1.nupkg.sha512"
+      "sha512": "sha512-SNQuFjYin9KhkoCSVOD5/Y4VEyAjKBDeZkIqqY6x+oI21HMKzzVkeJA9V7tWFXf5df4m/+pTIlbKO7g5W9UroQ==",
+      "path": "swashbuckle.aspnetcore.swaggerui/7.3.2",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.7.3.2.nupkg.sha512"
     },
     "System.Buffers/4.6.0": {
       "type": "package",

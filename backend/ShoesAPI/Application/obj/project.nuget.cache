@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "52bWJROp8xg=",
+  "dgSpecHash": "lyUuxAX985A=",
   "success": true,
   "projectFilePath": "D:\\Project\\ShoesShop\\backend\\ShoesAPI\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\romap\\.nuget\\packages\\awssdk.core\\3.7.402.19\\awssdk.core.3.7.402.19.nupkg.sha512",
+    "C:\\Users\\romap\\.nuget\\packages\\awssdk.core\\3.7.402.20\\awssdk.core.3.7.402.20.nupkg.sha512",
     "C:\\Users\\romap\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.400\\awssdk.extensions.netcore.setup.3.7.400.nupkg.sha512",
-    "C:\\Users\\romap\\.nuget\\packages\\awssdk.s3\\3.7.415.18\\awssdk.s3.3.7.415.18.nupkg.sha512",
+    "C:\\Users\\romap\\.nuget\\packages\\awssdk.s3\\3.7.415.19\\awssdk.s3.3.7.415.19.nupkg.sha512",
     "C:\\Users\\romap\\.nuget\\packages\\google.api.gax\\4.9.0\\google.api.gax.4.9.0.nupkg.sha512",
     "C:\\Users\\romap\\.nuget\\packages\\google.api.gax.rest\\4.9.0\\google.api.gax.rest.4.9.0.nupkg.sha512",
     "C:\\Users\\romap\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
