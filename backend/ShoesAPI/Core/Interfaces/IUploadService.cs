@@ -8,5 +8,6 @@ namespace Core.Interfaces
         Task UploadShoes(ShoesVM shoesVM);
         Task<IEnumerable<ShoeRVM>> GetShoes();
         Task<ShoeRVM> GetOneShoes(string id);
+        Task SetFevorite(FavoriteVM favoriteVM);
     }
 }

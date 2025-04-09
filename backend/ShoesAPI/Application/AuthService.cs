@@ -10,14 +10,14 @@ namespace Application
 {
     public class AuthService : IAuthService
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
         private readonly ILogger<AuthService> _logger;
 
         public AuthService(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
             IConfiguration configuration,
             ILogger<AuthService> logger
             )
@@ -96,10 +96,12 @@ namespace Application
                     throw new InvalidOperationException("Password is too short");
                 }
 
-                var user = new IdentityUser
+                var user = new ApplicationUser
                 {
                     UserName = register.Email.Split('@')[0],
-                    Email = register.Email
+                    Email = register.Email,
+                    FirstName = register.FirstName,
+                    LastName = register.LastName
                 };
 
                 var result = await _userManager.CreateAsync(user, register.Password);
@@ -121,4 +123,3 @@ namespace Application
         }
     }
 }
-

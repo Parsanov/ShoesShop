@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "https://localhost:7125/Shoes/"
+const API_URL = "http://localhost:5227/Shoes/"
 
 
 export const fetchAllShoes = async () => {

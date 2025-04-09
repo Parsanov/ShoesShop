@@ -19,7 +19,7 @@ namespace ShoesAPI.Controllers
 
 
         [HttpPut("AddShoes")]
-        public async Task<IActionResult> AddShoes([FromForm] ShoesVM shoesVM)
+        public async Task<IActionResult> AddShoes([FromBody] ShoesVM shoesVM)
         {
             try
             {
@@ -75,7 +75,23 @@ namespace ShoesAPI.Controllers
             }
         }
 
+        [HttpPut("FavoriteShoes")]
+        public async Task<IActionResult> SetFavotite([FromBody] FavoriteVM favoriteVM)
+        {
+            try
+            {
+                if (favoriteVM is null)
+                    return BadRequest("Favorite JSON is empty, pls add data");
 
+                await _uploadService.SetFevorite(favoriteVM);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message, "An Error has occurred while setting favorite in controller");
+                throw;
+            }
+        }
 
 
     }

@@ -18,7 +18,7 @@ namespace ShoesAPI.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromForm] Register register)
+        public async Task<IActionResult> Register([FromBody] Register register)
         {
            if(!ModelState.IsValid)
                 return BadRequest(ModelState);

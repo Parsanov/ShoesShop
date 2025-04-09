@@ -19,7 +19,7 @@ namespace Persistence
 
 
 
-        public async Task Add (Shoes shoes)
+        public async Task Add(Shoes shoes)
         {
             await _dBDataContext.shoes.AddAsync(shoes);
             await _dBDataContext.SaveChangesAsync();
@@ -35,6 +35,40 @@ namespace Persistence
             try
             {
                 return await _dBDataContext.shoes.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Shoes data is empty 'DataShoesService'");
+                throw;
+            }
+        }
+
+        public async Task<string> GetId(string id)
+        {
+            try
+            {
+                var ShoeId = await _dBDataContext.shoes.Where(x => x.Id == id).Select(x => x.Id).FirstOrDefaultAsync();
+
+                if (ShoeId == null)
+                    throw new Exception("Shoe not found");
+
+                return ShoeId;
+               
+               
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Shoes data is empty 'DataShoesService'");
+                throw;
+            }
+        }
+
+        public Task PutFavorite(Favorite favorite)
+        {
+            try
+            {
+                _dBDataContext.favorites.Add(favorite);
+                return _dBDataContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {

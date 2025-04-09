@@ -1,15 +1,18 @@
-import "./navbar.css";
-import shoppingCart from "../../../assets/shopping_bag.svg";
-import user from "../../../assets/user_profile.svg";
-import favorite from "../../../assets/favorite.svg";
-import search from "../../../assets/search.svg";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import './navbar.css';
+import shoppingCart from '../../../assets/shopping_bag.svg';
+import userIcon from '../../../assets/user_profile.svg';
+import favorite from '../../../assets/favorite.svg';
+import search from '../../../assets/search.svg';
+import logo from '../../../assets/MainIcon/LogoShop.png';
+import { AuthContext } from '../../AuthContext/AuthContext';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [closeTimeout, setCloseTimeout] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { user } = useContext(AuthContext);
 
   const handleMouseEnter = (menu) => {
     if (closeTimeout) {
@@ -33,7 +36,7 @@ const NavBar = () => {
   const ManMenu = () => (
     <div
       className="extend-menu"
-      onMouseEnter={() => handleMouseEnter("manMenu")}
+      onMouseEnter={() => handleMouseEnter('manMenu')}
       onMouseLeave={handleMouseLeave}
     >
       <div className="extend-menu__container">
@@ -109,7 +112,7 @@ const NavBar = () => {
   const WomanMenu = () => (
     <div
       className="extend-menu"
-      onMouseEnter={() => handleMouseEnter("womanMenu")}
+      onMouseEnter={() => handleMouseEnter('womanMenu')}
       onMouseLeave={handleMouseLeave}
     >
       <div className="extend-menu__container">
@@ -185,7 +188,7 @@ const NavBar = () => {
   const AboutUs = () => (
     <div
       className="extend-menu"
-      onMouseEnter={() => handleMouseEnter("aboutUs")}
+      onMouseEnter={() => handleMouseEnter('aboutUs')}
       onMouseLeave={handleMouseLeave}
     >
       <div className="extend-menu__container">
@@ -202,7 +205,7 @@ const NavBar = () => {
   const Delivery = () => (
     <div
       className="extend-menu"
-      onMouseEnter={() => handleMouseEnter("delivery")}
+      onMouseEnter={() => handleMouseEnter('delivery')}
       onMouseLeave={handleMouseLeave}
     >
       <div className="extend-menu__container">
@@ -221,30 +224,30 @@ const NavBar = () => {
       <div className="container">
         <div className="nav-container">
           <div className="nav__logo">
-            <Link to={"/"}>Shoes Shop</Link>
+            <Link to={'/'}><img src={logo} /></Link>
           </div>
           <div className="nav__menu">
-            <ul className={isMobileMenuOpen ? "open" : ""}>
+            <ul className={isMobileMenuOpen ? 'open' : ''}>
               <li
-                onMouseEnter={() => handleMouseEnter("manMenu")}
+                onMouseEnter={() => handleMouseEnter('manMenu')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link to={"/man"}>Чоловікам</Link>
+                <Link to={'/man'}>Чоловікам</Link>
               </li>
               <li
-                onMouseEnter={() => handleMouseEnter("womanMenu")}
+                onMouseEnter={() => handleMouseEnter('womanMenu')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link to={"/woman"}>Жінкам</Link>
+                <Link to={'/woman'}>Жінкам</Link>
               </li>
               <li
-                onMouseEnter={() => handleMouseEnter("aboutUs")}
+                onMouseEnter={() => handleMouseEnter('aboutUs')}
                 onMouseLeave={handleMouseLeave}
               >
                 <a href="#">Про нас</a>
               </li>
               <li
-                onMouseEnter={() => handleMouseEnter("delivery")}
+                onMouseEnter={() => handleMouseEnter('delivery')}
                 onMouseLeave={handleMouseLeave}
               >
                 <a href="#">Доставка</a>
@@ -260,9 +263,13 @@ const NavBar = () => {
             </div>
             <div className="user-reg">
               <a href="#">
-                <img className="user-icon" src={user} />
+                <img className="user-icon" src={userIcon} />
               </a>
-              <Link to={"/profileLog"}>Увійти/Реєстрація</Link>
+              {user ? (
+                <Link to={'/profileUser'}>Профіль</Link>
+              ) : (
+                <Link to={'/profileLog'}>Увійти</Link>
+              )}
             </div>
             <div className="nav--favorite">
               <a href="#" className="favorite-link">
@@ -284,15 +291,15 @@ const NavBar = () => {
 
       {/* Затемнений фон */}
       <div
-        className={`overlay ${activeMenu ? "active" : ""}`}
+        className={`overlay ${activeMenu ? 'active' : ''}`}
         onClick={handleMouseLeave}
       ></div>
 
       <div className="nav--extend" onMouseLeave={handleMouseLeave}>
-        {activeMenu === "manMenu" && <ManMenu />}
-        {activeMenu === "womanMenu" && <WomanMenu />}
-        {activeMenu === "aboutUs" && <AboutUs />}
-        {activeMenu === "delivery" && <Delivery />}
+        {activeMenu === 'manMenu' && <ManMenu />}
+        {activeMenu === 'womanMenu' && <WomanMenu />}
+        {activeMenu === 'aboutUs' && <AboutUs />}
+        {activeMenu === 'delivery' && <Delivery />}
       </div>
     </nav>
   );

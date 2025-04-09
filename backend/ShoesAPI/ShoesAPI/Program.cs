@@ -1,15 +1,16 @@
 using Amazon.S3;
 using Application;
 using Core.Interfaces;
+using Core.Model;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Persistence;
 using Persistence.Data;
 using System.Security.Cryptography;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -69,7 +70,8 @@ builder.Services.AddDbContext<DBDataContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"), b => b.MigrationsAssembly("ShoesAPI"));
 });
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+// Updated identity configuration to use ApplicationUser instead of IdentityUser
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 6;
@@ -95,6 +97,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/Logout";
         options.AccessDeniedPath = "/Account/AccessDenied";
+        options.ExpireTimeSpan = TimeSpan.FromDays(1);
     });
 
 var app = builder.Build();
@@ -121,4 +124,3 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-

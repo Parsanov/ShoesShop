@@ -18,7 +18,7 @@ const AboutShoes = () => {
     const fetchShoe = async () => {
       try {
         const response = await axios.get(
-          `https://localhost:7125/Shoes/GetOneShoes/`,
+          `http://localhost:5227/Shoes/GetOneShoes/`,
           {
             params: { shoesId: id },
           }

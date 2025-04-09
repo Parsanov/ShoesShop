@@ -9,8 +9,6 @@ namespace Core.Interfaces
         Task<string> AddShoes(ShoesVM shoesVM);
         Task<IEnumerable<Shoes>> GetShoes();
         void RemoveShoes(string id);
-
-
-
+        Task PutFavorite(string id, string userId);
     }
 }

@@ -14,5 +14,8 @@ namespace Core.Model
 
         [Compare("Password", ErrorMessage = "Password do not match")]
         public string ConfirPassword { get; set; }
+
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
     }
 }

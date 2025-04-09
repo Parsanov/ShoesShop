@@ -87,6 +87,22 @@ namespace Application
             }
         }
 
+        public Task SetFevorite(FavoriteVM favoriteVM)
+        {
+            try
+            {
+                if (favoriteVM is null)
+                    throw new ArgumentNullException(nameof(favoriteVM), "Favorite JSON is empty, pls add data");
+
+                return _shoesService.PutFavorite(favoriteVM.ShoesId, favoriteVM.UserId);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An Error has occurred while setting favorite in service");
+                throw;
+            }
+        }
+
         public async Task UploadShoes(ShoesVM shoesVM)
         {
             try

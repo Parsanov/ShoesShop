@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "Hj5K6xJqXIZ8eeAOz9EVvnOT/Dn+0psNEdK5YMXYxBo=",
+  "Hash": "BQ5/3ZCSgSZzXYsr0u49rnXNz22rst6zlKTF62udAsc=",
   "Source": "ShoesAPI",
   "BasePath": "_content/ShoesAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

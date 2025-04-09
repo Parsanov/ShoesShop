@@ -16,7 +16,7 @@ namespace Application
             _logger = logger;
         }
 
-        public async Task<string> AddShoes (ShoesVM shoesVM)
+        public async Task<string> AddShoes(ShoesVM shoesVM)
         {
             var shoes = new Shoes
             {
@@ -45,12 +45,38 @@ namespace Application
             }
         }
 
+
+        public async Task PutFavorite(string id, string userId)
+        {
+            try
+            {
+                var shoe = await _dataService.GetId(id);
+
+                var favorite = new Favorite
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    ShoeId = shoe,
+                    UserId = userId,
+                };
+
+                await _dataService.PutFavorite(favorite);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message, "Favorite is doesn't add to database 'Favorite'");
+                throw;
+            }
+        }
+
         public void RemoveShoes(string id)
         {
             throw new NotImplementedException();
         }
 
-
+        Task<IEnumerable<Shoes>> GetFavorite(string userId)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

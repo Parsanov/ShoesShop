@@ -10,5 +10,7 @@ namespace Core.Model
         public string SizeShoes { get; set; }
         public string? TypeShoes { get; set; }
         public string Gender { get; set; }
+        public List<Favorite> Favorite { get; set; } = new();
+
     }
 }

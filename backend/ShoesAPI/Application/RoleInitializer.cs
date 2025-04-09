@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
+using Core.Model; // додай цей рядок, якщо ApplicationUser там
 
 public class RoleInitializer
 {
     public static async Task InitializeAsync(IServiceProvider serviceProvider)
     {
         var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-        var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+        var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
         string[] roleNames = { "Admin", "Customer", "Manager" };
 
@@ -19,17 +20,18 @@ public class RoleInitializer
             }
         }
 
-        // Create an admin user if needed
         var adminEmail = "admin@example.com";
         var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
         if (adminUser == null)
         {
-            adminUser = new IdentityUser
+            adminUser = new ApplicationUser
             {
                 UserName = adminEmail,
                 Email = adminEmail,
-                EmailConfirmed = true
+                EmailConfirmed = true,
+                FirstName = "Admin",
+                LastName = "User"
             };
 
             await userManager.CreateAsync(adminUser, "Admin@123");

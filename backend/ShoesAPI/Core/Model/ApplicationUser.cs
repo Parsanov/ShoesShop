@@ -1,9 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core.Model
 {
@@ -12,5 +7,6 @@ namespace Core.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string? MailingAddress { get; set; }
+        public List<Favorite> Favorite { get; set; } = new();
     }
 }

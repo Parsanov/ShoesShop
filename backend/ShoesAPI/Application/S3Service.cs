@@ -1,4 +1,4 @@
-﻿using Amazon;
+﻿﻿using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
 using Core.Interfaces;
@@ -41,7 +41,7 @@ namespace Application
                 var uploadTasks = formFiles.Select(async formFile =>
                 {
                     var uniqueFileName = $"{Guid.NewGuid()}";
-                    var keyName = $"products/img-profile/{uniqueFileName}"; // Updated to include your desired path
+                    var keyName = $"products/shoesImg/{uniqueFileName}"; 
 
                     var putRequest = new PutObjectRequest
                     {
